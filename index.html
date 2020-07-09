@@ -1,31 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>
         JoJo reference
     </title>
     <style>
-        body{
+        body {
             text-align:center;
             margin-top: 20px;
         }
-        #reveal{
-            margin-top: 100px;
+        #reveal {
+            margin-top: 40px;
             font-size: large;
             font-style: italic;
         }
-
+        a:visited{
+            color: blue;
+        }
+        #trollink {
+            bottom: 20px;
+            border: black;
+        }
+        .filler{
+            font-size: larger;
+            margin: 30px;
+        }
+        .title{
+            border: 3px solid black;
+            background-color:rgb(300, 60, 50);
+        }
     </style>
 </head>
 <body>
+    <div class="title">
     <h1>
-        The answer to everything
-    </h1>
+        Super Mario in real life
+    </h1></div>
     <form> 
         <input style="margin-top: 20px;" type="button" value="Big reveal">
       </form>
       <p id="reveal"></p>
-      <img style="height: 300px;" class="funny picture" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Question_mark.svg/1200px-Question_mark.svg.png"
+      <img style="height: 300px;" class="funny picture" src="https://www.voicy.network/Content/Clips/Images/2a0de5fc-ed5d-41c8-a46e-803db15759c4-small.jpg"
        alt="Funny picture">
     <script>
         var buton = document.querySelector('input');
@@ -33,9 +48,13 @@
         var pic = document.querySelector("img");
         buton.addEventListener("click", updateButon);
         function updateButon() {
-            txt.textContent="You thought you would get the answer to everything, but it was I, Dio";
-            pic.src="https://i.kym-cdn.com/entries/icons/facebook/000/015/559/It_Was_Me__Dio!.jpg"
+            txt.textContent="Spaghetti!";
+            pic.src="https://ih0.redbubble.net/image.376231513.1309/flat,1000x1000,075,f.u1.jpg"
         }
     </script>
+    <div  id="trollink"><p class="filler"> </p>
+        <a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Nothing Suspicious</a><p class="filler">What a funny guy!
+        </p>
+    </div>
 </body>
 </html>
