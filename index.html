@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        JoJo reference
+    </title>
+    <style>
+        body{
+            text-align:center;
+            margin-top: 20px;
+        }
+        #reveal{
+            margin-top: 100px;
+            font-size: large;
+            font-style: italic;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>
+        The answer to everything
+    </h1>
+    <form> 
+        <input style="margin-top: 20px;" type="button" value="Big reveal">
+      </form>
+      <p id="reveal"></p>
+      <img style="height: 300px;" class="funny picture" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Question_mark.svg/1200px-Question_mark.svg.png"
+       alt="Funny picture">
+    <script>
+        var buton = document.querySelector('input');
+        var txt = document.querySelector('p');
+        var pic = document.querySelector("img");
+        buton.addEventListener("click", updateButon);
+        function updateButon() {
+            txt.textContent="You thought you would get the answer to everything, but it was I, Dio";
+            pic.src="https://i.kym-cdn.com/entries/icons/facebook/000/015/559/It_Was_Me__Dio!.jpg"
+        }
+    </script>
+</body>
+</html>
