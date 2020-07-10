@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="jquery-3.5.1.js"></script>
     <title>
         JoJo reference
     </title>
@@ -44,7 +45,7 @@
         <input style="margin-top: 20px;" type="button" value="Big reveal">
       </form>
       <p id="reveal"></p>
-      <img style="height: 300px;" class="funny picture" src="https://www.voicy.network/Content/Clips/Images/2a0de5fc-ed5d-41c8-a46e-803db15759c4-small.jpg"
+      <img style="height: 300px;" class="funny" src="https://www.voicy.network/Content/Clips/Images/2a0de5fc-ed5d-41c8-a46e-803db15759c4-small.jpg"
        alt="Funny picture">
     <script>
         var buton = document.querySelector('input');
@@ -55,6 +56,12 @@
             txt.textContent="Spaghetti!";
             pic.src="https://ih0.redbubble.net/image.376231513.1309/flat,1000x1000,075,f.u1.jpg"
         }
+        $(document).ready(function(){
+
+            $(".funny").mousedown(function(){alert("No touching kids!");});
+
+        }); 
+        
     </script>
     <div  id="trollink"><p class="filler"> </p>
         <a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Nothing Suspicious</a><p class="filler">What a funny guy!
