@@ -32,22 +32,28 @@
             border: 3px solid black;
             background-color:rgb(300, 60, 50);
             width: 400px;
+            height: 140px;
             margin: auto;
         }
         #slidedownmenu{
             display: none;
             font-size: larger;
+            height: 60px;
+            width: 170px;
+            border-top: none;
+            border-width: 2px;
+            margin: auto;
         }
     </style>
 </head>
 <body>
     <div class="header">
-    <h1 style="padding: 15px;">
+    <h1 style="padding: 10px 15px 0px 15px;">
         Super Mario in real life
-    </h1></div>
+    </h1><br><span style="">Menu ↓</span></div>
     <div id="slidedownmenu" class="header"><input style="margin-top: 20px;" type="button" value="Only for pros"></div>
     <form> 
-        <input style="margin-top: 20px;" type="button" value="Big reveal">
+        <input style="margin-top: 20px;" id="wrongButton" type="button" value="Big reveal">
       </form>
       <p id="reveal"></p>
       <img style="height: 300px;" class="funny" src="https://www.voicy.network/Content/Clips/Images/2a0de5fc-ed5d-41c8-a46e-803db15759c4-small.jpg"
@@ -70,6 +76,8 @@
             $("#slidedownmenu").mouseleave(function(){
                 $("#slidedownmenu").slideUp();
             });
+            $("#wrongButton").mousedown(function(){
+                alert("Wrong button");});
         }); 
         
     </script>
