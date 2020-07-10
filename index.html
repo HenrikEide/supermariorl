@@ -34,6 +34,10 @@
             width: 400px;
             margin: auto;
         }
+        #slidedownmenu{
+            display: none;
+            font-size: larger;
+        }
     </style>
 </head>
 <body>
@@ -41,6 +45,7 @@
     <h1 style="padding: 15px;">
         Super Mario in real life
     </h1></div>
+    <div id="slidedownmenu" class="header"><input style="margin-top: 20px;" type="button" value="Only for pros"></div>
     <form> 
         <input style="margin-top: 20px;" type="button" value="Big reveal">
       </form>
@@ -57,9 +62,14 @@
             pic.src="https://ih0.redbubble.net/image.376231513.1309/flat,1000x1000,075,f.u1.jpg"
         }
         $(document).ready(function(){
-
-            $(".funny").mousedown(function(){alert("No touching kids!");});
-
+            $(".funny").mousedown(function(){
+                alert("No touching kids!");});
+            $(".header").mouseover(function(){
+                $("#slidedownmenu").slideDown();
+            });
+            $("#slidedownmenu").mouseleave(function(){
+                $("#slidedownmenu").slideUp();
+            });
         }); 
         
     </script>
