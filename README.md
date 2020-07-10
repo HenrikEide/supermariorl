@@ -1,2 +1,2 @@
 # HenrikEide.github.io
-My personal website
+Good evening, adventurer. What brings you to my page?
