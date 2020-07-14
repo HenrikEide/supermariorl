@@ -78,15 +78,19 @@
         }
         $(document).ready(function(){
             var isdown = false;
-            $(".header").mousedown(function(){
+            $(".header").mouseenter(function(){
                 if(!isdown){
-                    $("#slideDownMenu").slideToggle();  
+                    $("#slideDownMenu").slideDown("fast",function(){
+                        $("#slideDownMenu").stop();
+                    });
                     isdown = true;
                 } 
             });
             $("#slideDownMenu").mouseleave(function(){
                 if(isdown){
-                    $("#slideDownMenu").slideToggle();
+                    $("#slideDownMenu").slideUp("fast",function(){
+                        $("#slideDownMenu").stop();
+                    });
                     isdown = false;
                 }
             });
