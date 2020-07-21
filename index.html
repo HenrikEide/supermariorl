@@ -10,13 +10,16 @@
     <style>
         body {
             position: relative;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-family: 'Helvetica', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
         #joke-site{
             background-color: lightblue;
             display: grid;
             place-items: center;
             text-align: center;
+            min-width: 400px;
+            width: 50%;
+            margin: auto;
             padding: 30px;
         }
         #reveal {
@@ -86,7 +89,7 @@
             var isdown = false;
             $(".header").mouseenter(function(){
                 if(!isdown){
-                    $("#slideDownMenu").slideDown("fast",function(){
+                    $("#slideDownMenu").slideDown("normal",function(){
                         $("#slideDownMenu").stop();
                     });
                     isdown = true;
@@ -94,7 +97,7 @@
             });
             $("#slideDownMenu").mouseleave(function(){
                 if(isdown){
-                    $("#slideDownMenu").slideUp("fast",function(){
+                    $("#slideDownMenu").slideUp("normal",function(){
                         $("#slideDownMenu").stop();
                     });
                     isdown = false;
