@@ -39,7 +39,7 @@
             font-size: larger;
             margin: 30px;
         }
-        .header{
+        .joke.header{
             border: 3px solid black;
             background-color:rgb(300, 60, 50);
             width: 400px;
@@ -59,12 +59,12 @@
 </head>
 <body>
     <div id="joke-site">
-    <div class="header">
+    <div class="joke-header">
         <h1 style="padding: 10px 15px 0px 15px;">Super Mario in real life</h1><br>
         <span style="font-style: unset;">Menu ↓</span>
     </div>
 
-    <div id="slideDownMenu" class="header">
+    <div id="slideDownMenu" class="joke-header">
         <input style="margin-top: 20px;" type="button" value="Only for pros">
     </div>
 
@@ -87,7 +87,7 @@
         }
         $(document).ready(function(){
             var isdown = false;
-            $(".header").mouseenter(function(){
+            $(".joke-header").mouseenter(function(){
                 if(!isdown){
                     $("#slideDownMenu").slideDown("normal",function(){
                         $("#slideDownMenu").stop();
